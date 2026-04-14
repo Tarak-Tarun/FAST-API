@@ -1,6 +1,6 @@
 from fastapi import APIRouter #type: ignore
-from schemas.user_schema import Product #type: ignore
+from schemas.user_schema import Users #type: ignore
 router = APIRouter()
-@router.post("/prodcuts")
-def products(product: Product):
-    return product
+@router.post("/users")
+def create_user(user: Users):
+    return user
