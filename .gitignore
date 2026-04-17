@@ -2,3 +2,5 @@ dependencies/
 APR16/.env
 APR16/core/config.py
 app/services/auth_service.py
+.env
+APR16/.env
