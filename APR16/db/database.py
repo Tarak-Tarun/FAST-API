@@ -1,5 +1,5 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy import create_engine #type: ignore
+from sqlalchemy.orm import sessionmaker, DeclarativeBase #type: ignore
 from core.config import settings
 
 engine = create_engine(settings.DATABASE_URL)

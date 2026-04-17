@@ -1,5 +1,5 @@
-from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
+from fastapi import APIRouter, Depends #type: ignore
+from sqlalchemy.orm import Session #type: ignore
 from schemas.user import UserCreate, UserLogin
 from services.auth_service import create_user, get_user
 from core.security import create_token

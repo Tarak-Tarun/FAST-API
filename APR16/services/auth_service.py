@@ -1,4 +1,4 @@
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session #type: ignore
 from models.user import User
 
 def create_user(db: Session, email: str, password: str):

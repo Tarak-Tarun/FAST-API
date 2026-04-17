@@ -1,6 +1,6 @@
-from fastapi.security import OAuth2PasswordBearer
-from fastapi import Depends, HTTPException
-from sqlalchemy.orm import Session
+from fastapi.security import OAuth2PasswordBearer #type: ignore
+from fastapi import Depends, HTTPException #type: ignore
+from sqlalchemy.orm import Session #type: ignore
 from core.security import decode_token
 from db.database import get_db
 from models.user import User
